@@ -104,3 +104,7 @@ with open("os error dict.text", "r") as f:
 with open("os error dict.text", "r") as f:
     string = f.readlines()
     # print(string)
+
+# 文件存在 清空 不存在 创建
+with open("path", "w") as f:
+    pass

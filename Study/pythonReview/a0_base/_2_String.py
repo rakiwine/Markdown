@@ -9,6 +9,12 @@
 Str = "1234567890Ab"
 
 # \r \t \n
+# ASCII基本字符，0 - 127，共128个 \x00-\x7f
+# 控制符 \x00-\x1f
+# 删除   \x7f
+# 空格   \x20
+# NBSP  \xC2\xA0       无间断空间(U 00A0)
+#       \xE3\x80\x80   双字节空间(U 3000)
 
 count = 0
 for item in dir(Str):
