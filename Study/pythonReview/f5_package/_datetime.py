@@ -138,17 +138,6 @@ def str_to_object():
         datetime.time.fromisoformat("00:00:00.000000+00:00")
         # 00:00:00+00:00
 
-
-# date time datetime 替换
-def object_replace():
-    # year, month, day, hour, minute, second, microsecond, tzinfo, fold
-    _datetime.replace()
-    # year, month, day
-    _date.replace()
-    # hour, minute, second, microsecond, tzinfo, fold
-    _time.replace()
-
-
 # 对象所能表示的最大日期
 # 9999-12-31 23:59:59.999999
 datetime.datetime.max
@@ -334,3 +323,33 @@ _timedelta.total_seconds()
 # 参数
 # 返回 float类型
 (_datetime - _datetime).total_seconds()
+
+
+# 常用
+# date time datetime 替换
+
+# year, month, day, hour, minute, second, microsecond, tzinfo, fold
+_datetime.replace()
+# year, month, day
+_date.replace()
+# hour, minute, second, microsecond, tzinfo, fold
+_time.replace()
+
+_datetime + datetime.timedelta(days=1)
+_date + datetime.timedelta(days=1)
+
+# 显示当前日期是本周第几天
+dic = {'7': 0, '6': 6, '5': 5, '4': 4, '3': 3, '2': 2, '1': 1}
+day_num = _datetime.isoweekday()
+day_num = dic[str(day_num)]
+
+# 获取上周周日
+weekday_t = (_datetime - datetime.timedelta(days=day_num))
+# 获取本周周六周日
+weekday_w = (_datetime - datetime.timedelta(days=day_num - 7))
+saturday_w = (_datetime - datetime.timedelta(days=day_num - 6))
+
+# 计算两个日期相差的天数、秒数
+(_datetime-_datetime).days
+(_datetime-_datetime).seconds
+(_datetime-_datetime).total_seconds
