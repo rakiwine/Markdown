@@ -112,7 +112,7 @@ print('property', property())
 # 判断参数 class 是否是类型参数 classinfo 的子类
 print('issubclass', issubclass(count))
 
-print('a0_complex', complex())
+print('a1_complex', complex())
 
 print('copyright', copyright())
 

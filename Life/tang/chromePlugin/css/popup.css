@@ -1,0 +1,32 @@
+body {
+    width: 400px;
+    height: 800px;
+}
+
+.logList {
+    width: 400px;
+    height: 100%;
+}
+
+
+.log {
+    width: 400px;
+    height: 24px;
+    font-weight: bold;
+    /* 超出一行省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.log > .parentTitle {
+    width: 76px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.log > a {
+    color: blue;
+}

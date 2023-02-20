@@ -9,7 +9,7 @@ import urllib
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import snowflake.client
-from Study.pythonReview.a0_complex.database.MysqlModel import MysqlModel
+from Study.pythonReview.a1_complex.database.MysqlModel import MysqlModel
 import pymysql
 
 # 目标url

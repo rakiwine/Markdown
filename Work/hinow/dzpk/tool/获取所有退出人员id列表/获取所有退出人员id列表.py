@@ -6,7 +6,7 @@
 # Author: rakiwine
 
 import re
-from Study.pythonReview.a0_complex.database.MysqlModel import MysqlModel
+from Study.pythonReview.a1_complex.database.MysqlModel import MysqlModel
 import pymysql
 
 _list = []
