@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 800px;
+}
+
+.logList {
+    width: 400px;
+    height: 100%;
+}
+
+
+.log {
+    width: 400px;
+    height: 27px;
+    font-weight: bold;
+    /* 超出一行省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.log > span {
+    height: 27px;
+    line-height: 27px;
+    vertical-align: top;
+}
+
+.log > .parentTitle {
+    width: 76px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.log > a {
+    color: blue;
+    line-height: 27px;
+}
