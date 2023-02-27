@@ -202,13 +202,3 @@ str0.isupper()                 # is判断 全大写
 str0.istitle()                 # is判断 全单词首字母大写
 
 str0.isidentifier()            # is判断 Python标识符\变量名是否合法
-
-# 字符串切片
-# 从正数第一个正着走
-print(1, str0[::1])
-print(2, str0[0:1000:1])
-# 从倒数最后一个倒着走
-print(3, str0[::-1])
-print(4, str0[-1:-1000:-1])
-# [start: end: sep] start + sep -> end 能够前进才存在值
-

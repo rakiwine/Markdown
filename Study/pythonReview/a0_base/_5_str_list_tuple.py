@@ -3,7 +3,35 @@
 # Date: 2022/07/21
 # file: _7_str_list_tuple.py
 # Email:
-# Author: rakiwine 
+# Author: rakiwine
+
+
+str_list_tuple = []
+
+# 列表切片
+# 从正数第一个正着走
+print(str_list_tuple[::-1])
+print(str_list_tuple[0:1000:1])
+# 从倒数最后一个倒着走
+print(str_list_tuple[:])
+print(str_list_tuple[-1:-1000:-1])
+# [start: end: sep] start + sep -> end 能够前进才存在值
+
+# 遍历
+for i in str_list_tuple:
+    pass
+
+for i in range(len(str_list_tuple)):
+    pass
+
+for i, v in enumerate(str_list_tuple):
+    pass
+
+
+# 查询
+print(1 in "")
+print(1 in [])
+print(1 in ())
 
 # 作用 统计在字符串/列表/元组中某个字符出现的次数
 # 返回 字符在区间范围内出现次数
